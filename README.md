@@ -4,7 +4,7 @@ Mobile-friendly single page resume template built with the ratio of perfect four
 
 ## Demo
 
-[https://vjai.github.io/about.me/](https://vjai.github.io/about.me/)
+[https://srikanthpullela.github.io/about.me/](https://srikanthpullela.github.io/about.me/)
 
 ## Screenshots
 
