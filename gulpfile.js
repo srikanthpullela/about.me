@@ -7,9 +7,8 @@ var webserver = require('gulp-webserver');
 
 gulp.task('sass', function () {
 	return gulp.src(['./scss', '*.scss'].join('/'))
-	           .pipe(sass())
-// 	           .pipe(concat('aboutme.css'))
-	 	   .pipe(concat('index.css'))
+	           .pipe(sass().on('error', sass.logError))
+	           .pipe(concat('aboutme.css'))
 	           .pipe(gulp.dest('.'));
 });
 

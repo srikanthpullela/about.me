@@ -1,8 +1,9 @@
 $heading-font-family:         'Bebas Neue', cursive !default;
 $body-font-family:            'PT Sans', sans-serif !default;
 
-$tablet:                      1280px !default;
 $mobile:                      700px !default;
+$dektop:                      1080px !default;
+$extra-large:                 1500px !default;
 
 // Ratio: 1.333 (4:3)
 
@@ -25,7 +26,7 @@ $mobile:                      700px !default;
 }
 
 // Interval - 1
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $extra-large) {
   :root {
     --base-size: 19px;
     --x5l-size: 5.61rem;
@@ -58,12 +59,17 @@ $xxxs-size:                   var(--xxxs-size) !default;
 $x4s-size:                    var(--x4s-size) !default;
 
 // Colors
-$yellow:                      #ffde08 !default;
+// Primary
+$brand-color:                 #02c5be !default;
+$back-ground-color:           #ffebcd !default;
+
+// Secondary
 $alabaster:                   #fafafa !default;
 $dove-gray:                   #636363 !default;
 $edward:                      #adb8b5 !default;
 $pewter:                      #909e9a !default;
 
+// Tertiary
 $white:                       #ffffff !default;
 $black:                       #000000 !default;
 $gray:                        #eeeeee !default;
@@ -78,6 +84,8 @@ $base-font-size:              18px !default;
 $heading-letter-spacing:      2px !default;
 
 $image-width:                 42.86% !default;
+
+$photo:                       "assets/me.jpeg" !default;
 
 @font-face {
   font-family: 'fontello';
@@ -103,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  border-bottom: dashed 4px $yellow;
+  border-bottom: dashed 4px $brand-color;
   font-size: $h2-font-size;
   margin-bottom: $xl-size;
   color: $edward;
@@ -121,8 +129,6 @@ h4 {
 }
 
 ul {
-  padding-left: 0;
-
   li {
     margin-bottom: $x4s-size;
   }
@@ -135,7 +141,7 @@ a {
   transition: color 0.250s;
 
   &:hover, &:active {
-    color: darken($yellow, 10%);
+    color: darken($brand-color, 10%);
   }
 }
 
@@ -179,8 +185,13 @@ body {
     width: 100%;
     height: 100vh;
     box-shadow: 5px 0 5px -5px $box-shadow;
-    background-image: url("assets/photo-2.jpeg");
+    background-image: url($photo);
     background-size: cover;
+    background-position: bottom;
+    &:hover {
+       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
   }
 
   .right {
@@ -210,7 +221,7 @@ body {
       z-index: 2;
 
       h1 {
-        color: $yellow;
+        color: $brand-color;
         text-shadow: 1px 1px $edward;
       }
 
@@ -249,7 +260,7 @@ body {
           }
 
           &:hover {
-            color: $yellow;
+            color: $brand-color;
           }
         }
       }
@@ -265,7 +276,7 @@ body {
 
           a {
             &:hover {
-              color: darken($yellow, 10%);
+              color: darken($brand-color, 10%);
             }
 
             &:after {
@@ -278,7 +289,7 @@ body {
       }
     }
 
-    @media only screen and (min-width: $tablet) {
+    @media only screen and (min-width: $dektop) {
       .scrim {
         display: none;
       }
@@ -299,7 +310,7 @@ body {
 
           a {
             &:hover {
-              color: darken($yellow, 10%);
+              color: darken($brand-color, 10%);
             }
 
             &:after {
@@ -322,6 +333,7 @@ body {
       p::first-letter {
         font-size: $xxl-size;
         font-family: $heading-font-family;
+        line-height: 1;
       }
     }
 
@@ -381,7 +393,7 @@ body {
           padding: $lg-size;
 
           .card-left {
-            margin-right: 1rem;
+            margin-right: $md-size;
 
             img {
               border-radius: 50%;
@@ -438,12 +450,12 @@ body {
                 background-color: $pewter;
 
                 &:hover {
-                  background-color: $yellow;
+                  background-color: $brand-color;
                 }
               }
 
               &:hover {
-                border-color: $yellow;
+                border-color: $brand-color;
               }
             }
           }
@@ -463,7 +475,7 @@ body {
           border: solid 1px $pewter;
           margin-right: $md-size;
           border-radius: 5px;
-          margin-bottom: $sm-size;
+          margin-bottom: $xs-size;
           cursor: pointer;
           transition: all 0.250s;
 
@@ -519,11 +531,11 @@ body {
         }
 
         &:hover {
-          background-color: $yellow;
+          background-color: $brand-color;
           color: $dove-gray;
 
           &::after {
-            border-left: .625rem solid $yellow;
+            border-left: .625rem solid $brand-color;
           }
         }
       }
@@ -539,11 +551,11 @@ body {
           border-bottom: none;
 
           i {
-            font-size: 1.25rem;
+            font-size: $lg-size;
           }
 
           &:hover {
-            color: $yellow;
+            color: $brand-color;
           }
         }
       }
@@ -551,7 +563,7 @@ body {
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $dektop) {
 
   body {
     flex-direction: row;
@@ -563,7 +575,7 @@ body {
 
     .right {
       margin-left: $image-width;
-      padding: $lg-size $x5l-size;
+      padding: $lg-size $xxxl-size;
     }
   }
 }
