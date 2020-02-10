@@ -42,7 +42,12 @@ h1 {
   color: #adb8b5;
   margin-bottom: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
   margin-top: 0; }
@@ -110,14 +115,17 @@ body {
     box-shadow: 5px 0 5px -5px #cccccc;
     background-image: url("assets/me.jpeg");
     background-size: cover;
-    background-position: bottom; }
+    background-position: bottom;
+    position: relative;
+    animation: left 2s; }
     body .left:hover {
       -webkit-filter: grayscale(100%);
-      /* Safari 6.0 - 9.0 */
       filter: grayscale(100%); }
   body .right {
     padding: var(--xl-size);
-    flex-grow: 1; }
+    flex-grow: 1;
+    position: relative;
+    animation: right 2s; }
     body .right .scrim {
       display: block;
       position: absolute;
@@ -137,7 +145,7 @@ body {
       width: 100%;
       height: 100vh;
       z-index: 2; }
-      body .right .head h1 {
+      body .right .head .header-title {
         color: #02c5be;
         text-shadow: 1px 1px #adb8b5; }
       body .right .head p {
@@ -169,6 +177,9 @@ body {
           body .right .head .contact-info a:hover {
             color: #02c5be; }
     @media only screen and (min-width: 700px) {
+      body .right .left {
+        background-repeat: no-repeat;
+        background-attachment: fixed; }
       body .right .head {
         height: auto; }
         body .right .head .contact-info {
@@ -209,7 +220,8 @@ body {
         line-height: 1; }
     body .right .section {
       margin-bottom: var(--x4l-size); }
-      body .right .section h3, body .right .section h4 {
+      body .right .section h3,
+      body .right .section h4 {
         margin-bottom: 0; }
       body .right .section .top-row {
         display: flex;
@@ -219,7 +231,8 @@ body {
           border-bottom: none; }
         body .right .section .top-row > * {
           flex-grow: 1; }
-      body .right .section .experience, body .right .section .education {
+      body .right .section .experience,
+      body .right .section .education {
         margin-bottom: var(--xxxl-size); }
       body .right .section .experience .manager {
         font-size: var(--sm-size);
@@ -359,3 +372,27 @@ body {
     body .right {
       margin-left: 42.86%;
       padding: var(--lg-size) var(--xxxl-size); } }
+
+@media only screen and (max-width: 1080px) {
+  body .left {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: inherit; }
+  body .right {
+    position: inherit; } }
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    left: 200px; }
+  100% {
+    opacity: 1;
+    left: 0px; } }
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    left: -200px; }
+  100% {
+    opacity: 1;
+    left: 0px; } }
