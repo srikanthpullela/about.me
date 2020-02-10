@@ -621,6 +621,10 @@ body {
     left: 200px;
   }
 
+  50% {
+    opacity: 0;
+  }
+
   100% {
     opacity: 1;
     left: 0px;
@@ -631,6 +635,10 @@ body {
   0% {
     opacity: 0;
     left: -200px;
+  }
+
+  50% {
+    opacity: 0;
   }
 
   100% {
