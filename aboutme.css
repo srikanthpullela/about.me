@@ -117,7 +117,7 @@ body {
     background-size: cover;
     background-position: bottom;
     position: relative;
-    animation: left 2s; }
+    animation: left 3s; }
     body .left:hover {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%); }
@@ -125,7 +125,7 @@ body {
     padding: var(--xl-size);
     flex-grow: 1;
     position: relative;
-    animation: right 2s; }
+    animation: right 3s; }
     body .right .scrim {
       display: block;
       position: absolute;
@@ -308,7 +308,7 @@ body {
           cursor: pointer;
           transition: all 0.250s; }
           body .right .section .interests li:hover {
-            background-color: #636363;
+            background-color: #02c5be;
             color: #ffffff; }
     body .right .chips {
       display: flex;
@@ -400,3 +400,93 @@ body {
   100% {
     opacity: 1;
     left: 0px; } }
+
+.animations {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed; }
+
+.animate {
+  width: 200px;
+  height: 7px;
+  position: relative;
+  left: -400px;
+  margin: 100px; }
+
+.animate1 {
+  width: 150px;
+  height: 2px;
+  position: relative;
+  left: -400px;
+  margin: 30px; }
+
+.animate1 {
+  width: 250px;
+  height: 6px;
+  position: relative;
+  left: -400px;
+  margin: 30px; }
+
+.animate-delay1 {
+  background: red;
+  animation: leftright 0.5s 2;
+  animation-delay: -0.5s; }
+
+.animate-delay2 {
+  background: #37C5BE;
+  animation: rightleft 0.5s 2;
+  animation-delay: -0.3s; }
+
+.animate-delay3 {
+  background: green;
+  animation: leftright 0.2s 2;
+  animation-delay: -0.2s; }
+
+.animate-delay4 {
+  background: green;
+  animation: rightleft 0.2s 2;
+  animation-delay: -0.2s; }
+
+.animate-delay5 {
+  background: #37C5BE;
+  animation: leftright 0.3s 3;
+  animation-delay: -0.3s; }
+
+.animate-delay10 {
+  background: white;
+  animation: leftright 0.3s 3;
+  animation-delay: -0.3s; }
+
+.animate-delay6 {
+  background: #37C5BE;
+  animation: rightleft 0.3s 2;
+  animation-delay: -0.3s; }
+
+.animate-delay7 {
+  background: green;
+  animation: leftright 0.6s 3;
+  animation-delay: -0.6s; }
+
+.animate-delay8 {
+  background: green;
+  animation: rightleft 0.1s 3;
+  animation-delay: -0.1s; }
+
+.animate-delay9 {
+  background: #37C5BE;
+  animation: rightleft 0.2s 2;
+  animation-delay: -0.2s; }
+
+@keyframes leftright {
+  from {
+    left: -10%; }
+  to {
+    left: 120%; } }
+
+@keyframes rightleft {
+  from {
+    left: 120%; }
+  to {
+    left: -10%; } }
