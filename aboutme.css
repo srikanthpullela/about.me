@@ -409,30 +409,30 @@ body {
   position: fixed; }
 
 .animate {
-  width: 200px;
+  width: 300px;
   height: 7px;
   position: relative;
   left: -400px;
-  margin: 100px; }
-
-.animate1 {
-  width: 150px;
-  height: 2px;
-  position: relative;
-  left: -400px;
-  margin: 30px; }
+  margin: 50px; }
 
 .animate1 {
   width: 250px;
+  height: 7px;
+  position: relative;
+  left: -400px;
+  margin: 20px; }
+
+.animate2 {
+  width: 100px;
   height: 6px;
   position: relative;
   left: -400px;
-  margin: 30px; }
+  margin: 10px; }
 
 .animate-delay1 {
   background: red;
   animation: leftright 1s 2;
-  animation-delay: -0.5s; }
+  animation-delay: -0.1s; }
 
 .animate-delay2 {
   background: #37C5BE;
@@ -442,40 +442,58 @@ body {
 .animate-delay3 {
   background: green;
   animation: leftright 1s 2;
-  animation-delay: -0.2s; }
+  animation-delay: -0.6s; }
 
 .animate-delay4 {
   background: green;
-  animation: rightleft 1s 2;
+  animation: rightleft 0.3s 2;
   animation-delay: -0.2s; }
 
 .animate-delay5 {
   background: #37C5BE;
   animation: leftright 1s 2;
-  animation-delay: -0.3s; }
+  animation-delay: -0.4s; }
 
 .animate-delay10 {
   background: blue;
   animation: leftright 1s 2;
-  animation-delay: -0.3s; }
+  animation-delay: -0.2s; }
 
 .animate-delay6 {
   background: #37C5BE;
   animation: rightleft 1s 2;
-  animation-delay: -0.3s; }
+  animation-delay: -0.6s; }
 
 .animate-delay7 {
   background: green;
   animation: leftright 1s 2;
-  animation-delay: -0.2s; }
+  animation-delay: -0.8s; }
 
 .animate-delay8 {
   background: green;
   animation: rightleft 1s 2;
   animation-delay: -0.1s; }
 
-.animate-delay9 {
-  background: #37C5BE;
+.lc-splash {
+  background: #02c5be; }
+
+.rc-splash {
+  background: red; }
+
+.gc-splash {
+  background: green; }
+
+.bc-splash {
+  background: blue; }
+
+.blac-splash {
+  background: black; }
+
+.animate-leftRight {
+  animation: leftright 1s 2;
+  animation-delay: -0.2s; }
+
+.animate-rightLeft {
   animation: rightleft 1s 2;
   animation-delay: -0.2s; }
 
