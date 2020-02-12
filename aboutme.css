@@ -113,7 +113,7 @@ body {
     width: 100%;
     height: 100vh;
     box-shadow: 5px 0 5px -5px #cccccc;
-    background-image: url("assets/me.jpeg");
+    background-image: url("assets/me-small.jpeg");
     background-size: cover;
     background-position: bottom;
     position: relative;
@@ -431,52 +431,52 @@ body {
 
 .animate-delay1 {
   background: red;
-  animation: leftright 0.5s 2;
+  animation: leftright 1s 2;
   animation-delay: -0.5s; }
 
 .animate-delay2 {
   background: #37C5BE;
-  animation: rightleft 0.5s 2;
+  animation: rightleft 1s 2;
   animation-delay: -0.3s; }
 
 .animate-delay3 {
   background: green;
-  animation: leftright 0.2s 2;
+  animation: leftright 1s 2;
   animation-delay: -0.2s; }
 
 .animate-delay4 {
   background: green;
-  animation: rightleft 0.2s 2;
+  animation: rightleft 1s 2;
   animation-delay: -0.2s; }
 
 .animate-delay5 {
   background: #37C5BE;
-  animation: leftright 0.3s 3;
+  animation: leftright 1s 2;
   animation-delay: -0.3s; }
 
 .animate-delay10 {
-  background: white;
-  animation: leftright 0.3s 3;
+  background: blue;
+  animation: leftright 1s 2;
   animation-delay: -0.3s; }
 
 .animate-delay6 {
   background: #37C5BE;
-  animation: rightleft 0.3s 2;
+  animation: rightleft 1s 2;
   animation-delay: -0.3s; }
 
 .animate-delay7 {
   background: green;
-  animation: leftright 0.6s 3;
-  animation-delay: -0.6s; }
+  animation: leftright 1s 2;
+  animation-delay: -0.2s; }
 
 .animate-delay8 {
   background: green;
-  animation: rightleft 0.1s 3;
+  animation: rightleft 1s 2;
   animation-delay: -0.1s; }
 
 .animate-delay9 {
   background: #37C5BE;
-  animation: rightleft 0.2s 2;
+  animation: rightleft 1s 2;
   animation-delay: -0.2s; }
 
 @keyframes leftright {
