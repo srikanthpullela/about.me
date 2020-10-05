@@ -8,7 +8,7 @@ Mobile-friendly single page resume template built with the perfect fourth ratio.
 
 ## Demo
 
-[https://srikanthpullela.github.io/about.me/](https://srikanthpullela.github.io/about.me/)
+[https://srikanthpullela.github.io/](https://srikanthpullela.github.io/about.me/)
 
 ## Supported Browsers
 
