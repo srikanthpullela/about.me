@@ -519,10 +519,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 60px;
-}
+    border-radius: 60px;}
+
+.resume-download a {
+border: none;}
 
 .resume-download .img {
     width: 2rem;
-    height: 2rem;
-}
+    height: 2rem;}
