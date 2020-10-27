@@ -547,7 +547,6 @@ body {
       justify-content: center;
       overflow: hidden;
       position: relative;
-    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
     }
  
     .circle {
@@ -557,6 +556,7 @@ body {
       height: 100px;
       position: absolute;
       opacity: 0;
+      animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
     }
  
     .item {
