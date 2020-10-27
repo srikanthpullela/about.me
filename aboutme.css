@@ -522,8 +522,8 @@ body {
     border-radius: 60px;}
 
 .resume-download a {
-border: none;}
+    border: none;}
 
-.resume-download .img {
+.resume-download img {
     width: 2rem;
     height: 2rem;}
