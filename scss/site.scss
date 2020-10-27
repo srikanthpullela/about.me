@@ -789,3 +789,23 @@ body {
     left: -10%;
   }
 }
+
+// Resume icon
+
+.resume-download {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 41px;
+    bottom: 21px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+}
+
+.resume-download .img {
+    width: 2rem;
+    height: 2rem;
+}
