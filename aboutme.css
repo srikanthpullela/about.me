@@ -540,8 +540,8 @@ body {
     height: 1.3rem;}
 
 #container {
-      width: 600px;
-      height: 400px;
+      width: 100px;
+      height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -553,8 +553,8 @@ body {
     .circle {
       border-radius: 50%;
       background-color: deepskyblue;
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       position: absolute;
       opacity: 0;
     }
@@ -565,7 +565,7 @@ body {
     }
  
     .item img {
-      width: 150px;
+      width: 50px;
     }
 
 @keyframes scaleIn {
