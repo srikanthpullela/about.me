@@ -509,73 +509,47 @@ body {
   to {
     left: -10%; } }
 
-.resume-download {
-    animation: blow 1s 2;
-    animation-iteration-count: infinite;
+.outerContainer {
     position: fixed;
-    width: 50px;
-    height: 50px;
     right: 2%;
-    bottom: 2%;
-    background: #02c5be;
+    bottom: 2%;}
+
+.resume-download {
+    width: 111px;
+    height: 111px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 60px;}
-@keyframes blow {
-  from {
-    width: 60px;
-    height: 60px;
-    opacity: 0.5}
-  to {
-     width: 50px;
-     height: 50px; 
-     opacity: 1} }
-
-.resume-download a {
-    border: none;}
-
-.resume-download img {
-    width: 1.3rem;
-    height: 1.3rem;}
-
-#container {
-      width: 100px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: relative;
-    }
+    overflow: hidden;
+    position: relative;}
  
-    .circle {
-      border-radius: 50%;
-      background-color: deepskyblue;
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      opacity: 0;
-      animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
-    }
+.circle {
+  border-radius: 50%;
+  background-color: #02c5be;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
  
-    .item {
-      z-index: 100;
-      padding: 5px;
-    }
- 
-    .item img {
-      width: 50px;
-    }
+.item {
+  z-index: 100;
+  padding: 5px;
+}
+
+.item img {
+  width: 30px;
+}
 
 @keyframes scaleIn {
   from {
-    transform: scale(.5, .5);
-    opacity: .5;
+  transform: scale(.5, .5);
+  opacity: .5;
   }
-  to {
-    transform: scale(2.5, 2.5);
-    opacity: 0;
+to {
+  transform: scale(2.5, 2.5);
+  opacity: 0;
   }
 }
 
