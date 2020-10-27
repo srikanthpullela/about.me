@@ -510,16 +510,27 @@ body {
     left: -10%; } }
 
 .resume-download {
+    animation: blow 1s 2;
+    animation-iteration-count: infinite;
     position: fixed;
     width: 50px;
     height: 50px;
     right: 41px;
     bottom: 41px;
-    background: red;
+    background: #02c5be;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 60px;}
+@keyframes blow {
+  from {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5}
+  to {
+     width: 50px;
+     height: 50px; 
+     opacity: 1} }
 
 .resume-download a {
     border: none;}
